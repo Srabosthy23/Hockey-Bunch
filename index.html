@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey-Bunch</title>
+  <!-- Daisy Ui and Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Customise Tailwind Colors -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            tomato: '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Manrope Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Manrope Font Style -->
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+
+  <!-- Font awesome Icon -->
+  <script src="https://kit.fontawesome.com/b86594bddf.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="font-manrope">
+  <header class="container mx-auto my-10">
+    <!-- Nav Bar Section -->
+    <nav>
+      <div class="flex justify-between items-center bg-base-100">
+        <div class="hidden lg:flex">
+          <h2 class="text-3xl font-extrabold flex-1">Hockey <span class="text-tomato">'</span> s</h2>
+        </div>
+
+        <!-- For Large Device -->
+        <div>
+          <ul class="hidden lg:flex gap-5 text-base font-normal">
+            <li class="text-tomato">Home</li>
+            <li>About</li>
+            <li>Pages</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <!-- For Small Device -->
+        <div class="dropdown dropdown-right flex justify-start lg:hidden">
+          <div tabindex="0" role="button" class=" bg-white border-0 m-1"><i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 p-0 m-0 w-52">
+            <li class="text-tomato">Home</li>
+            <li>About</li>
+            <li>Pages</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="flex lg:hidden">
+          <h2 class="text-3xl font-extrabold flex-1">Hockey <span class="text-tomato">'</span> s</h2>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="text-stone-400">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div>
+            <button class="btn bg-tomato border-0 text-[#FFF] font-semibold lg:text-lg">Get Ticket</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+  </main>
+
+
+</body>
+
+</html>
